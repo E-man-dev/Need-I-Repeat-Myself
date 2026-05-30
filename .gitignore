@@ -5,4 +5,4 @@ godot/.godot/
 # Added by cargo
 
 rust/target
-/NIRM/
+/NIRM/*
