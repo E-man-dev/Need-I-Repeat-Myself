@@ -10,3 +10,5 @@ Correct rust/Cargo.toml
 Add something for number slots
 Add tooltip text to all boxes
 Add screen reader compatibility
+Add instructions for installing/compiling
+Explain the logo, explain the app's existence
