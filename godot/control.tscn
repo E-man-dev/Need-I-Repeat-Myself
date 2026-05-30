@@ -1,0 +1,218 @@
+[gd_scene format=3 uid="uid://bktmxhu8kpk8r"]
+
+[node name="Control" type="Control" unique_id=1966853659]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=378807689]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer" unique_id=1533823193]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainerL" type="VBoxContainer" parent="ScrollContainer/HBoxContainer" unique_id=995281513]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FirstBlockText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=1489194699]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Add first block of text here"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=75875355]
+layout_mode = 2
+
+[node name="SecondBlockText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=686839158]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Add second block of text here"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator2" type="HSeparator" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=1776816374]
+layout_mode = 2
+
+[node name="ThirdBlockText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=1532058432]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Add third block of text here"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator3" type="HSeparator" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=1182359237]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/HBoxContainer/VBoxContainerL" unique_id=696395772]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/VBoxContainerL/HBoxContainer" unique_id=738532728]
+layout_mode = 2
+text = "Iterations: "
+
+[node name="SpinBox" type="SpinBox" parent="ScrollContainer/HBoxContainer/VBoxContainerL/HBoxContainer" unique_id=2055197046]
+layout_mode = 2
+tooltip_text = "Total iterations (ex: 1 will only make it through the first block)"
+rounded = true
+
+[node name="VSeparator" type="VSeparator" parent="ScrollContainer/HBoxContainer/VBoxContainerL/HBoxContainer" unique_id=267715406]
+layout_mode = 2
+
+[node name="GoButton" type="GoButton" parent="ScrollContainer/HBoxContainer/VBoxContainerL/HBoxContainer" unique_id=2059280119]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Calculate the output based on all the information provided"
+text = "Go"
+
+[node name="VSeparator" type="VSeparator" parent="ScrollContainer/HBoxContainer" unique_id=1735827608]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ScrollContainer/HBoxContainer" unique_id=80896307]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainerR" type="VBoxContainer" parent="ScrollContainer/HBoxContainer/ScrollContainer" unique_id=2064216556]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=856925281]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotNumberFlag" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR/HBoxContainer" unique_id=1848851011]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Slot number placeholder (ex: <SLOT>)"
+
+[node name="CostNumberFlag" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR/HBoxContainer" unique_id=68429731]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Cost number placeholder (ex: <COST>)"
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=442609523]
+layout_mode = 2
+
+[node name="SlotNumbers" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=1651042954]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Slot numbers (ex: 28, 9, 10, 12)"
+
+[node name="HSeparator2" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=146312599]
+layout_mode = 2
+
+[node name="CostNumbers" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=1349068180]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Cost numbers (ex: 1, 1, 4, 2)"
+
+[node name="HSeparator3" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=718961397]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=1742142715]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpTextFlag1" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR/HBoxContainer2" unique_id=1019752977]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Special text placeholder for first block (ex: <SP1>)"
+
+[node name="SpTextFlag2" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR/HBoxContainer2" unique_id=1156695964]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Special text placeholder for second block (ex: <SP2>)"
+
+[node name="SpTextFlag3" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR/HBoxContainer2" unique_id=534903663]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Special text placeholder for third block (ex: <SP3>)"
+
+[node name="HSeparator4" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=821088248]
+layout_mode = 2
+
+[node name="FirstSpText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=544224511]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Special text 1"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator5" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=104340378]
+layout_mode = 2
+
+[node name="SecondSpText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=18368103]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Special text 2"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator6" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=140904189]
+layout_mode = 2
+
+[node name="ThirdSpText" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=2084043954]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+placeholder_text = "Special text 3"
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+
+[node name="HSeparator8" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=156297765]
+layout_mode = 2
+
+[node name="SpTextSeparator" type="CodeEdit" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=1467886331]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Special text separator (ex: <SEP>, |-_-_-|, NEXT)"
+
+[node name="HSeparator7" type="HSeparator" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=2050829642]
+layout_mode = 2
+
+[node name="Output" type="Output" parent="ScrollContainer/HBoxContainer/ScrollContainer/VBoxContainerR" unique_id=898760232]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+placeholder_text = "Output"
+editable = false
+
+[node name="Coordinator" type="Coordinator" parent="ScrollContainer" unique_id=1903347534]

@@ -1,0 +1,16 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+linux.debug.arm64 =      "res://../rust/target/debug/libneed_i_repeat_myself.so"
+linux.release.arm64 =    "res://../rust/target/release/libneed_i_repeat_myself.so"
+linux.debug.x86_64 =     "res://../rust/target/debug/libneed-i-repeat-myself.x86_64.so"
+linux.release.x86_64 =   "res://../rust/target/release/libneed-i-repeat-myself.x86_64.so"
+windows.debug.x86_64 =   "res://../rust/target/debug/need-i-repeat-myself.x86_64.dll"
+windows.release.x86_64 = "res://../rust/target/release/need-i-repeat-myself.x86_64.dll"
+macos.debug =            "res://../rust/target/debug/libneed-i-repeat-myself.x86_64.dylib"
+macos.release =          "res://../rust/target/release/libneed-i-repeat-myself.x86_64.dylib"
+macos.debug.arm64 =      "res://../rust/target/debug/libneed-i-repeat-myself.arm64.dylib"
+macos.release.arm64 =    "res://../rust/target/release/libneed-i-repeat-myself.arm64.dylib"
